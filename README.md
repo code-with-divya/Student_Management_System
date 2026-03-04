@@ -1,17 +1,92 @@
 This project was customized, enhanced, and secured by Divya Gawade.
-# Student-Management-System
-Student Management System is a web application which can be used for managing the data of a school related to students, teachers, and courses.
+# 🎓 Student Management System
 
-The application has 3 user roles: student, teacher, and admin. Each role has access to different pages and operations which is described below:
+A secure and role-based Student Management System developed using Spring Boot and Spring Security.  
+This project was enhanced, secured, and customized by **Divya Gawade** with improved authentication, authorization, and backend structure.
 
-<ul>
-  <li><b>Admin:</b> The admin can add/delete courses, students, and teachers. Furthermore, it can enroll students to courses or remove students from courses. The admin
-  can view statistics of the school such as the number of students and teachers at the school.</li>
-  <li><b>Student:</b> The student can view all of the courses enrolled. By clicking on each course, the student can view the course details which consist of exam grades and 
-  assignments. The student should click on the "mark as completed" button for each assignment he/she completed so that the teacher of the course can 
-  track students' assignment status.</li>
-  <li><b>Teacher:</b> The teacher can view the student list, create new assignments and view the students' assignment status, and grade exams.</li>
-</ul>
+---
+
+## 🚀 Key Features
+
+### 👩‍💼 Admin
+- Add / Delete Students, Teachers, and Courses
+- Enroll students into courses
+- Remove students from courses
+- View system statistics
+- Role-based secured dashboard
+
+### 👨‍🎓 Student
+- View enrolled courses
+- View assignments and exam grades
+- Mark assignments as completed
+- Secure login and dashboard access
+
+### 👨‍🏫 Teacher
+- View enrolled students
+- Create and manage assignments
+- Track assignment completion status
+- Grade student exams
+
+---
+
+## 🔐 Security Implementation
+
+- Spring Security Authentication
+- Role-Based Authorization (ADMIN / STUDENT / TEACHER)
+- BCrypt Password Encryption
+- Custom UserDetailsService Implementation
+- Login & Access Denied Handling
+
+---
+
+## 🏗 Architecture
+
+- MVC Architecture
+- Controller Layer
+- Service Layer
+- DAO Layer
+- MySQL Database Integration
+
+---
+
+## 🛠 Technologies Used
+
+- Java
+- Spring Boot
+- Spring Security
+- Spring MVC
+- Hibernate (JPA)
+- MySQL
+- Thymeleaf
+- HTML
+- CSS
+- Maven
+
+---
+
+## 📸 Application Screens
+
+### Registration View
+(Add your updated screenshots here)
+
+### Admin Dashboard
+(Add your updated screenshots here)
+
+### Student Dashboard
+(Add your updated screenshots here)
+
+### Teacher Dashboard
+(Add your updated screenshots here)
+
+---
+
+## 👩‍💻 Developed & Customized By
+
+**Divya Gawade**  
+GitHub: https://github.com/code-with-divya
+
+---
+
 
 <img src="https://user-images.githubusercontent.com/93772280/160869303-dc4db60e-df04-49bf-845d-cf34f3325b3f.PNG" width="700">
 
