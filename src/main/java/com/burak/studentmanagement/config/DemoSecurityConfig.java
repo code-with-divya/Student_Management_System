@@ -10,7 +10,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.burak.studentmanagement.service.StudentService;
-import com.burak.studentmanagement.service.TeacherService;
 
 @Configuration
 @EnableWebSecurity
@@ -63,6 +62,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.formLogin()
 				.loginPage("/showLoginPage") //custom login page is generated in LoginController
 				.loginProcessingUrl("/authenticateTheUser") //authenticateTheUser is automatically done by spring boot
+				.usernameParameter("email")
+				.passwordParameter("password")
 				.successHandler(customAuthenticationSuccessHandler) //after login, user is redirected to home page depending on the role.
 				.permitAll()
 			.and()
