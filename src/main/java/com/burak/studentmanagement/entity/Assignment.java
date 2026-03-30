@@ -23,7 +23,7 @@ public class Assignment implements Comparable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@NotBlank(message="is required") 
+	@NotBlank(message="Name is required") 
 	@Size(min=1, message="is required")
 	@Column(name="name")
 	private String name;

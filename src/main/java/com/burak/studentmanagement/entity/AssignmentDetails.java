@@ -22,15 +22,15 @@ public class AssignmentDetails {
 	@Column(name="student_course_details_id")
 	private int studentCourseDetailsId;
 	
-	@Column(name="is_done")
-	private int isDone; 
+	@Column(name="is_done")      //default value
+	private boolean  isDone; 
 	
 	public AssignmentDetails() {
 		
 	}
 	
 	
-	public AssignmentDetails(int id, int assignmentId, int studentCourseDetailsId, int isDone) {
+	public AssignmentDetails(int id, int assignmentId, int studentCourseDetailsId, boolean isDone) {
 		this.id = id;
 		this.assignmentId = assignmentId;
 		this.studentCourseDetailsId = studentCourseDetailsId;
@@ -68,12 +68,12 @@ public class AssignmentDetails {
 	}
 
 
-	public int getIsDone() {
+	public boolean  getIsDone() {
 		return isDone;
 	}
 
 
-	public void setIsDone(int isDone) {
+	public void setIsDone(boolean isDone) {
 		this.isDone = isDone;
 	}
 	

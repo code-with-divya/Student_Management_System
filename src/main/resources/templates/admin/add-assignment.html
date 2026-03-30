@@ -66,11 +66,14 @@
 
 <form th:action="@{/admin/add-assignment}" method="post">
 
-    <label>Title:</label>
-    <input type="text" name="title" required/>
+    <label>Name:</label>
+    <input type="text" name="name" required/>
 
     <label>Description:</label>
     <input type="text" name="description"/>
+
+    <label>Due Date:</label>
+    <input type="date" name="dueDate" required/>
 
     <label>Course:</label>
     <select name="courseId">
